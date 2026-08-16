@@ -68,6 +68,12 @@ class customer_usage(Base):
 
     customer = relationship("customer", back_populates="usage")
 
+class admin(Base):
+    __tablename__ = "admin"
+
+    username = Column(String(255), primary_key=True)
+    password = Column(String(255), nullable=False)
+
 DATABASE_URL = os.getenv("DATABASE_URL")
 if not DATABASE_URL:
     raise ValueError("DATABASE_URL environment variable is not set.")
