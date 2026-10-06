@@ -28,6 +28,7 @@ class CustomerResponse(BaseModel):
     sms_sent: int
     data_used: float
     churn: bool
+    risk_category: str | None = None
 
 class CustomerPaginationResponse(BaseModel):
     total: int
@@ -43,3 +44,20 @@ class ChurnRateAnalyticsResponse(BaseModel):
 class CustomerDistributionResponse(BaseModel):
     total_customers: int
     partners: dict[str, int]
+
+class CustomPredictionRequest(BaseModel):
+    telecom_partner: str
+    gender: str
+    age: int
+    state: str
+    city: str
+    date_of_registration: date
+    num_dependents: int
+    estimated_salary: float
+    calls_made: int
+    sms_sent: int
+    data_used: float
+
+class RiskBucket(BaseModel):
+    risk_category: str
+    count: int

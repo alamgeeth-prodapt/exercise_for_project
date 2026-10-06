@@ -1,0 +1,43 @@
+.signal {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 3px;
+  height: 22px;
+}
+
+.signal__bar {
+  width: 4px;
+  border-radius: 2px;
+  background: var(--primary-soft);
+  transform-origin: bottom;
+}
+
+.signal--loading .signal__bar {
+  animation: signal-pulse 1s ease-in-out infinite;
+  background: var(--accent);
+}
+
+.signal--meter.signal--good .signal__bar {
+  background: var(--signal-good);
+}
+
+.signal--meter.signal--mid .signal__bar {
+  background: var(--accent);
+}
+
+.signal--meter.signal--bad .signal__bar {
+  background: var(--signal-bad);
+}
+
+@keyframes signal-pulse {
+  0%, 100% { transform: scaleY(0.4); opacity: 0.5; }
+  50% { transform: scaleY(1); opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .signal--loading .signal__bar {
+    animation: none;
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,87 @@
+.dashboard__stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.dashboard__charts {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 900px) {
+  .dashboard__charts {
+    grid-template-columns: 1fr;
+  }
+}
+
+.chart-tooltip {
+  background: var(--ink);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+}
+
+.chart-tooltip__label {
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.chart-tooltip__value {
+  color: var(--accent);
+}
+
+.distribution-chart {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.distribution-chart__legend {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  flex: 1;
+  min-width: 160px;
+}
+
+.distribution-chart__legend li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.distribution-chart__swatch {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.distribution-chart__legend-name {
+  flex: 1;
+  color: var(--ink-soft);
+}
+
+.distribution-chart__legend-value {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.dashboard__state {
+  padding: 40px 0;
+  text-align: center;
+  color: var(--ink-soft);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}

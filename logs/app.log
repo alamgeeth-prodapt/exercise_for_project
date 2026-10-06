@@ -1,0 +1,1745 @@
+2026-08-21 09:46:50,123 | INFO | app | GET /analytics/churn-rate | status=401 | duration=0.098s
+2026-08-21 09:46:50,125 | INFO | app | GET /analytics/gender-distribution | status=401 | duration=0.038s
+2026-08-21 09:46:50,127 | INFO | app | GET /analytics/age-distribution | status=401 | duration=0.052s
+2026-08-21 09:46:50,131 | INFO | app | GET /analytics/distribution | status=401 | duration=0.059s
+2026-08-21 09:46:50,133 | INFO | app | GET /analytics/risk-distribution | status=401 | duration=0.045s
+2026-08-21 09:46:50,205 | INFO | app | GET /analytics/churn-rate | status=401 | duration=0.017s
+2026-08-21 09:46:50,209 | INFO | app | GET /analytics/gender-distribution | status=401 | duration=0.019s
+2026-08-21 09:46:50,211 | INFO | app | GET /analytics/age-distribution | status=401 | duration=0.020s
+2026-08-21 09:46:50,213 | INFO | app | GET /analytics/distribution | status=401 | duration=0.020s
+2026-08-21 09:46:50,215 | INFO | app | GET /analytics/risk-distribution | status=401 | duration=0.022s
+2026-08-21 09:46:57,996 | INFO | app | POST /auth/login | status=200 | duration=0.654s
+2026-08-21 09:46:58,946 | INFO | app | GET /analytics/distribution | status=200 | duration=0.600s
+2026-08-21 09:46:59,019 | INFO | app | GET /analytics/age-distribution | status=200 | duration=0.672s
+2026-08-21 09:46:59,087 | INFO | app | GET /analytics/churn-rate | status=200 | duration=1.062s
+2026-08-21 09:46:59,362 | INFO | app | GET /analytics/age-distribution | status=200 | duration=0.339s
+2026-08-21 09:46:59,459 | INFO | app | GET /analytics/distribution | status=200 | duration=0.508s
+2026-08-21 09:46:59,762 | INFO | app | GET /analytics/risk-distribution | status=200 | duration=1.411s
+2026-08-21 09:47:00,022 | INFO | app | GET /analytics/gender-distribution | status=200 | duration=1.673s
+2026-08-21 09:47:00,253 | INFO | app | GET /analytics/churn-rate | status=200 | duration=1.161s
+2026-08-21 09:47:00,837 | INFO | app | GET /analytics/risk-distribution | status=200 | duration=1.070s
+2026-08-21 09:47:01,413 | INFO | app | GET /analytics/gender-distribution | status=200 | duration=1.381s
+2026-08-21 09:47:13,622 | INFO | app | GET /customer/ | status=200 | duration=6.411s
+2026-08-21 09:47:20,032 | INFO | app | GET /customer/ | status=200 | duration=6.404s
+2026-08-21 09:47:43,036 | INFO | app | POST /prediction/9 | status=200 | duration=0.271s
+2026-08-21 09:47:44,848 | INFO | app | POST /prediction/2 | status=200 | duration=0.040s
+2026-08-21 09:47:45,494 | INFO | app | POST /prediction/1 | status=200 | duration=0.093s
+2026-08-21 09:47:59,300 | ERROR | app | POST /prediction/custom | status=500 | duration=0.099s
+Traceback (most recent call last):
+  File "D:\exercise_for_final_project\main.py", line 17, in log_requests
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 2685, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 1766, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 2740, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 1786, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 1265, in handle
+    await app(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 151, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 137, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 691, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 347, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\anyio\_backends\_asyncio.py", line 2641, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\anyio\_backends\_asyncio.py", line 1033, in run
+    result = context.run(func, *args)
+  File "D:\exercise_for_final_project\routes\prediction.py", line 24, in custom_prediction
+    pred = int(model.predict(proc)[0])
+               ~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\linear_model\_base.py", line 414, in predict
+    scores = self.decision_function(X)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\linear_model\_base.py", line 389, in decision_function
+    X = validate_data(self, X, accept_sparse="csr", reset=False)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 3038, in validate_data
+    out = check_array(X, input_name="X", **check_params)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 1087, in check_array
+    _assert_all_finite(
+    ~~~~~~~~~~~~~~~~~~^
+        array,
+        ^^^^^^
+    ...<2 lines>...
+        allow_nan=ensure_all_finite == "allow-nan",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 137, in _assert_all_finite
+    _assert_all_finite_element_wise(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        X,
+        ^^
+    ...<4 lines>...
+        input_name=input_name,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 186, in _assert_all_finite_element_wise
+    raise ValueError(msg_err)
+ValueError: Input X contains NaN.
+LogisticRegression does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2026-08-21 09:48:06,709 | ERROR | app | POST /prediction/custom | status=500 | duration=0.028s
+Traceback (most recent call last):
+  File "D:\exercise_for_final_project\main.py", line 17, in log_requests
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 2685, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 1766, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 2740, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 1786, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 1265, in handle
+    await app(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 151, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 137, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 691, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 347, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\anyio\_backends\_asyncio.py", line 2641, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\anyio\_backends\_asyncio.py", line 1033, in run
+    result = context.run(func, *args)
+  File "D:\exercise_for_final_project\routes\prediction.py", line 24, in custom_prediction
+    pred = int(model.predict(proc)[0])
+               ~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\linear_model\_base.py", line 414, in predict
+    scores = self.decision_function(X)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\linear_model\_base.py", line 389, in decision_function
+    X = validate_data(self, X, accept_sparse="csr", reset=False)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 3038, in validate_data
+    out = check_array(X, input_name="X", **check_params)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 1087, in check_array
+    _assert_all_finite(
+    ~~~~~~~~~~~~~~~~~~^
+        array,
+        ^^^^^^
+    ...<2 lines>...
+        allow_nan=ensure_all_finite == "allow-nan",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 137, in _assert_all_finite
+    _assert_all_finite_element_wise(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        X,
+        ^^
+    ...<4 lines>...
+        input_name=input_name,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 186, in _assert_all_finite_element_wise
+    raise ValueError(msg_err)
+ValueError: Input X contains NaN.
+LogisticRegression does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2026-08-21 09:48:12,562 | ERROR | app | POST /prediction/custom | status=500 | duration=0.028s
+Traceback (most recent call last):
+  File "D:\exercise_for_final_project\main.py", line 17, in log_requests
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 2685, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 1766, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 2740, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 1786, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 1265, in handle
+    await app(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 151, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 137, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 691, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 347, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\anyio\_backends\_asyncio.py", line 2641, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\anyio\_backends\_asyncio.py", line 1033, in run
+    result = context.run(func, *args)
+  File "D:\exercise_for_final_project\routes\prediction.py", line 24, in custom_prediction
+    pred = int(model.predict(proc)[0])
+               ~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\linear_model\_base.py", line 414, in predict
+    scores = self.decision_function(X)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\linear_model\_base.py", line 389, in decision_function
+    X = validate_data(self, X, accept_sparse="csr", reset=False)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 3038, in validate_data
+    out = check_array(X, input_name="X", **check_params)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 1087, in check_array
+    _assert_all_finite(
+    ~~~~~~~~~~~~~~~~~~^
+        array,
+        ^^^^^^
+    ...<2 lines>...
+        allow_nan=ensure_all_finite == "allow-nan",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 137, in _assert_all_finite
+    _assert_all_finite_element_wise(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        X,
+        ^^
+    ...<4 lines>...
+        input_name=input_name,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 186, in _assert_all_finite_element_wise
+    raise ValueError(msg_err)
+ValueError: Input X contains NaN.
+LogisticRegression does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2026-08-21 09:48:13,784 | ERROR | app | POST /prediction/custom | status=500 | duration=0.042s
+Traceback (most recent call last):
+  File "D:\exercise_for_final_project\main.py", line 17, in log_requests
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 2685, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 1766, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 2740, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 1786, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 1265, in handle
+    await app(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 151, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 137, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 691, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 347, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\anyio\_backends\_asyncio.py", line 2641, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\anyio\_backends\_asyncio.py", line 1033, in run
+    result = context.run(func, *args)
+  File "D:\exercise_for_final_project\routes\prediction.py", line 24, in custom_prediction
+    pred = int(model.predict(proc)[0])
+               ~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\linear_model\_base.py", line 414, in predict
+    scores = self.decision_function(X)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\linear_model\_base.py", line 389, in decision_function
+    X = validate_data(self, X, accept_sparse="csr", reset=False)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 3038, in validate_data
+    out = check_array(X, input_name="X", **check_params)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 1087, in check_array
+    _assert_all_finite(
+    ~~~~~~~~~~~~~~~~~~^
+        array,
+        ^^^^^^
+    ...<2 lines>...
+        allow_nan=ensure_all_finite == "allow-nan",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 137, in _assert_all_finite
+    _assert_all_finite_element_wise(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        X,
+        ^^
+    ...<4 lines>...
+        input_name=input_name,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 186, in _assert_all_finite_element_wise
+    raise ValueError(msg_err)
+ValueError: Input X contains NaN.
+LogisticRegression does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2026-08-21 09:50:30,520 | ERROR | app | POST /prediction/custom | status=500 | duration=0.092s
+Traceback (most recent call last):
+  File "D:\exercise_for_final_project\main.py", line 17, in log_requests
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 2685, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 1766, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 2740, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 1786, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 1265, in handle
+    await app(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 151, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 137, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 691, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 347, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\anyio\_backends\_asyncio.py", line 2641, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\anyio\_backends\_asyncio.py", line 1033, in run
+    result = context.run(func, *args)
+  File "D:\exercise_for_final_project\routes\prediction.py", line 24, in custom_prediction
+    pred = int(model.predict(proc)[0])
+               ~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\linear_model\_base.py", line 414, in predict
+    scores = self.decision_function(X)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\linear_model\_base.py", line 389, in decision_function
+    X = validate_data(self, X, accept_sparse="csr", reset=False)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 3038, in validate_data
+    out = check_array(X, input_name="X", **check_params)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 1087, in check_array
+    _assert_all_finite(
+    ~~~~~~~~~~~~~~~~~~^
+        array,
+        ^^^^^^
+    ...<2 lines>...
+        allow_nan=ensure_all_finite == "allow-nan",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 137, in _assert_all_finite
+    _assert_all_finite_element_wise(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        X,
+        ^^
+    ...<4 lines>...
+        input_name=input_name,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 186, in _assert_all_finite_element_wise
+    raise ValueError(msg_err)
+ValueError: Input X contains NaN.
+LogisticRegression does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2026-08-21 09:53:25,277 | ERROR | app | POST /prediction/custom | status=500 | duration=0.086s
+Traceback (most recent call last):
+  File "D:\exercise_for_final_project\main.py", line 17, in log_requests
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 2685, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 1766, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 2740, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 1786, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 1265, in handle
+    await app(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 151, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 137, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 691, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 347, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\anyio\_backends\_asyncio.py", line 2641, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\anyio\_backends\_asyncio.py", line 1033, in run
+    result = context.run(func, *args)
+  File "D:\exercise_for_final_project\routes\prediction.py", line 24, in custom_prediction
+    pred = int(model.predict(proc)[0])
+               ~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\linear_model\_base.py", line 414, in predict
+    scores = self.decision_function(X)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\linear_model\_base.py", line 389, in decision_function
+    X = validate_data(self, X, accept_sparse="csr", reset=False)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 3038, in validate_data
+    out = check_array(X, input_name="X", **check_params)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 1087, in check_array
+    _assert_all_finite(
+    ~~~~~~~~~~~~~~~~~~^
+        array,
+        ^^^^^^
+    ...<2 lines>...
+        allow_nan=ensure_all_finite == "allow-nan",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 137, in _assert_all_finite
+    _assert_all_finite_element_wise(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        X,
+        ^^
+    ...<4 lines>...
+        input_name=input_name,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 186, in _assert_all_finite_element_wise
+    raise ValueError(msg_err)
+ValueError: Input X contains NaN.
+LogisticRegression does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2026-08-21 09:56:54,111 | ERROR | app | POST /prediction/custom | status=500 | duration=0.031s
+Traceback (most recent call last):
+  File "D:\exercise_for_final_project\main.py", line 17, in log_requests
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 2685, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 1766, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 2740, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 1786, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 1265, in handle
+    await app(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 151, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 137, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 691, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 347, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\anyio\_backends\_asyncio.py", line 2641, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\anyio\_backends\_asyncio.py", line 1033, in run
+    result = context.run(func, *args)
+  File "D:\exercise_for_final_project\routes\prediction.py", line 24, in custom_prediction
+    pred = int(model.predict(proc)[0])
+               ~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\linear_model\_base.py", line 414, in predict
+    scores = self.decision_function(X)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\linear_model\_base.py", line 389, in decision_function
+    X = validate_data(self, X, accept_sparse="csr", reset=False)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 3038, in validate_data
+    out = check_array(X, input_name="X", **check_params)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 1087, in check_array
+    _assert_all_finite(
+    ~~~~~~~~~~~~~~~~~~^
+        array,
+        ^^^^^^
+    ...<2 lines>...
+        allow_nan=ensure_all_finite == "allow-nan",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 137, in _assert_all_finite
+    _assert_all_finite_element_wise(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        X,
+        ^^
+    ...<4 lines>...
+        input_name=input_name,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 186, in _assert_all_finite_element_wise
+    raise ValueError(msg_err)
+ValueError: Input X contains NaN.
+LogisticRegression does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2026-08-21 09:57:01,998 | INFO | app | GET /customer/ | status=200 | duration=5.958s
+2026-08-21 09:57:08,131 | INFO | app | GET /customer/ | status=200 | duration=6.129s
+2026-08-21 09:57:11,211 | INFO | app | POST /prediction/1 | status=200 | duration=0.030s
+2026-08-21 09:57:12,449 | INFO | app | POST /prediction/2 | status=200 | duration=0.036s
+2026-08-21 09:57:32,744 | ERROR | app | POST /prediction/custom | status=500 | duration=0.031s
+Traceback (most recent call last):
+  File "D:\exercise_for_final_project\main.py", line 17, in log_requests
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 2685, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 1766, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 2740, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 1786, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 1265, in handle
+    await app(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 151, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 137, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 691, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 347, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\anyio\_backends\_asyncio.py", line 2641, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\anyio\_backends\_asyncio.py", line 1033, in run
+    result = context.run(func, *args)
+  File "D:\exercise_for_final_project\routes\prediction.py", line 24, in custom_prediction
+    pred = int(model.predict(proc)[0])
+               ~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\linear_model\_base.py", line 414, in predict
+    scores = self.decision_function(X)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\linear_model\_base.py", line 389, in decision_function
+    X = validate_data(self, X, accept_sparse="csr", reset=False)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 3038, in validate_data
+    out = check_array(X, input_name="X", **check_params)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 1087, in check_array
+    _assert_all_finite(
+    ~~~~~~~~~~~~~~~~~~^
+        array,
+        ^^^^^^
+    ...<2 lines>...
+        allow_nan=ensure_all_finite == "allow-nan",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 137, in _assert_all_finite
+    _assert_all_finite_element_wise(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        X,
+        ^^
+    ...<4 lines>...
+        input_name=input_name,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 186, in _assert_all_finite_element_wise
+    raise ValueError(msg_err)
+ValueError: Input X contains NaN.
+LogisticRegression does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2026-08-21 10:00:44,540 | INFO | app | POST /prediction/custom | status=200 | duration=0.379s
+2026-08-21 10:00:51,253 | INFO | app | POST /prediction/custom | status=200 | duration=0.032s
+2026-08-21 10:00:51,852 | INFO | app | POST /prediction/custom | status=200 | duration=0.035s
+2026-08-21 10:00:55,012 | INFO | app | POST /prediction/custom | status=200 | duration=0.025s
+2026-08-21 10:01:04,304 | INFO | app | GET /customer/ | status=200 | duration=6.011s
+2026-08-21 10:01:10,500 | INFO | app | GET /customer/ | status=200 | duration=6.192s
+2026-08-21 10:01:13,814 | ERROR | app | POST /prediction/1 | status=500 | duration=0.045s
+Traceback (most recent call last):
+  File "D:\exercise_for_final_project\main.py", line 17, in log_requests
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 2685, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 1766, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 2740, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 1786, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 1265, in handle
+    await app(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 151, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 137, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 691, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 347, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\anyio\_backends\_asyncio.py", line 2641, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\anyio\_backends\_asyncio.py", line 1033, in run
+    result = context.run(func, *args)
+  File "D:\exercise_for_final_project\routes\prediction.py", line 82, in predict
+    pred = int(model.predict(res)[0])
+               ~~~~~~~~~~~~~^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\linear_model\_base.py", line 414, in predict
+    scores = self.decision_function(X)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\linear_model\_base.py", line 389, in decision_function
+    X = validate_data(self, X, accept_sparse="csr", reset=False)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 3038, in validate_data
+    out = check_array(X, input_name="X", **check_params)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 1087, in check_array
+    _assert_all_finite(
+    ~~~~~~~~~~~~~~~~~~^
+        array,
+        ^^^^^^
+    ...<2 lines>...
+        allow_nan=ensure_all_finite == "allow-nan",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 137, in _assert_all_finite
+    _assert_all_finite_element_wise(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        X,
+        ^^
+    ...<4 lines>...
+        input_name=input_name,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 186, in _assert_all_finite_element_wise
+    raise ValueError(msg_err)
+ValueError: Input X contains NaN.
+LogisticRegression does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2026-08-21 10:03:59,542 | INFO | app | POST /prediction/1 | status=200 | duration=0.370s
+2026-08-21 10:04:00,331 | INFO | app | POST /prediction/2 | status=200 | duration=0.037s
+2026-08-21 10:04:12,812 | ERROR | app | POST /prediction/custom | status=500 | duration=0.031s
+Traceback (most recent call last):
+  File "D:\exercise_for_final_project\main.py", line 17, in log_requests
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 2685, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 1766, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 2740, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 1786, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 1265, in handle
+    await app(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 151, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 137, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 691, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 347, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\anyio\_backends\_asyncio.py", line 2641, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\anyio\_backends\_asyncio.py", line 1033, in run
+    result = context.run(func, *args)
+  File "D:\exercise_for_final_project\routes\prediction.py", line 24, in custom_prediction
+    pred = int(model.predict(proc)[0])
+               ~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\linear_model\_base.py", line 414, in predict
+    scores = self.decision_function(X)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\linear_model\_base.py", line 389, in decision_function
+    X = validate_data(self, X, accept_sparse="csr", reset=False)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 3038, in validate_data
+    out = check_array(X, input_name="X", **check_params)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 1087, in check_array
+    _assert_all_finite(
+    ~~~~~~~~~~~~~~~~~~^
+        array,
+        ^^^^^^
+    ...<2 lines>...
+        allow_nan=ensure_all_finite == "allow-nan",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 137, in _assert_all_finite
+    _assert_all_finite_element_wise(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        X,
+        ^^
+    ...<4 lines>...
+        input_name=input_name,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 186, in _assert_all_finite_element_wise
+    raise ValueError(msg_err)
+ValueError: Input X contains NaN.
+LogisticRegression does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2026-08-21 10:05:41,906 | INFO | app | POST /auth/login | status=200 | duration=0.660s
+2026-08-21 10:05:42,476 | INFO | app | GET /analytics/distribution | status=200 | duration=0.495s
+2026-08-21 10:05:42,800 | INFO | app | GET /analytics/age-distribution | status=200 | duration=0.564s
+2026-08-21 10:05:42,978 | INFO | app | GET /analytics/distribution | status=200 | duration=0.491s
+2026-08-21 10:05:43,065 | INFO | app | GET /analytics/churn-rate | status=200 | duration=1.125s
+2026-08-21 10:05:43,164 | INFO | app | GET /analytics/age-distribution | status=200 | duration=0.359s
+2026-08-21 10:05:43,561 | INFO | app | GET /analytics/risk-distribution | status=200 | duration=1.315s
+2026-08-21 10:05:43,911 | INFO | app | GET /analytics/gender-distribution | status=200 | duration=1.668s
+2026-08-21 10:05:44,108 | INFO | app | GET /analytics/churn-rate | status=200 | duration=1.038s
+2026-08-21 10:05:44,567 | INFO | app | GET /analytics/risk-distribution | status=200 | duration=1.002s
+2026-08-21 10:05:45,243 | INFO | app | GET /analytics/gender-distribution | status=200 | duration=1.328s
+2026-08-21 10:05:54,317 | ERROR | app | POST /prediction/custom | status=500 | duration=0.224s
+Traceback (most recent call last):
+  File "D:\exercise_for_final_project\main.py", line 17, in log_requests
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 2685, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 1766, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 2740, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 1786, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 1265, in handle
+    await app(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 151, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 137, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 691, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 347, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\anyio\_backends\_asyncio.py", line 2641, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\anyio\_backends\_asyncio.py", line 1033, in run
+    result = context.run(func, *args)
+  File "D:\exercise_for_final_project\routes\prediction.py", line 24, in custom_prediction
+    pred = int(model.predict(proc)[0])
+               ~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\linear_model\_base.py", line 414, in predict
+    scores = self.decision_function(X)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\linear_model\_base.py", line 389, in decision_function
+    X = validate_data(self, X, accept_sparse="csr", reset=False)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 3038, in validate_data
+    out = check_array(X, input_name="X", **check_params)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 1087, in check_array
+    _assert_all_finite(
+    ~~~~~~~~~~~~~~~~~~^
+        array,
+        ^^^^^^
+    ...<2 lines>...
+        allow_nan=ensure_all_finite == "allow-nan",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 137, in _assert_all_finite
+    _assert_all_finite_element_wise(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        X,
+        ^^
+    ...<4 lines>...
+        input_name=input_name,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 186, in _assert_all_finite_element_wise
+    raise ValueError(msg_err)
+ValueError: Input X contains NaN.
+LogisticRegression does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2026-08-21 10:06:01,883 | ERROR | app | POST /prediction/custom | status=500 | duration=0.024s
+Traceback (most recent call last):
+  File "D:\exercise_for_final_project\main.py", line 17, in log_requests
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 2685, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 1766, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 2740, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 1786, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 1265, in handle
+    await app(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 151, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 137, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 691, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 347, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\anyio\_backends\_asyncio.py", line 2641, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\anyio\_backends\_asyncio.py", line 1033, in run
+    result = context.run(func, *args)
+  File "D:\exercise_for_final_project\routes\prediction.py", line 24, in custom_prediction
+    pred = int(model.predict(proc)[0])
+               ~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\linear_model\_base.py", line 414, in predict
+    scores = self.decision_function(X)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\linear_model\_base.py", line 389, in decision_function
+    X = validate_data(self, X, accept_sparse="csr", reset=False)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 3038, in validate_data
+    out = check_array(X, input_name="X", **check_params)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 1087, in check_array
+    _assert_all_finite(
+    ~~~~~~~~~~~~~~~~~~^
+        array,
+        ^^^^^^
+    ...<2 lines>...
+        allow_nan=ensure_all_finite == "allow-nan",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 137, in _assert_all_finite
+    _assert_all_finite_element_wise(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        X,
+        ^^
+    ...<4 lines>...
+        input_name=input_name,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\utils\validation.py", line 186, in _assert_all_finite_element_wise
+    raise ValueError(msg_err)
+ValueError: Input X contains NaN.
+LogisticRegression does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2026-08-21 10:06:04,570 | INFO | app | POST /prediction/custom | status=200 | duration=0.029s
+2026-08-21 10:06:07,460 | INFO | app | POST /prediction/custom | status=200 | duration=0.031s
+2026-08-21 10:06:10,755 | INFO | app | POST /prediction/custom | status=200 | duration=0.025s
+2026-08-21 10:08:51,841 | INFO | app | GET /customer/ | status=200 | duration=5.729s
+2026-08-21 10:08:58,198 | INFO | app | GET /customer/ | status=200 | duration=6.353s
+2026-08-21 10:09:05,670 | INFO | app | POST /prediction/1 | status=200 | duration=0.104s
+2026-08-21 10:09:06,171 | INFO | app | POST /prediction/2 | status=200 | duration=0.038s
+2026-08-21 10:49:35,352 | INFO | app | POST /auth/login | status=200 | duration=0.433s
+2026-08-21 10:49:35,673 | INFO | app | GET /analytics/distribution | status=200 | duration=0.289s
+2026-08-21 10:49:35,936 | INFO | app | GET /analytics/age-distribution | status=200 | duration=0.258s
+2026-08-21 10:49:35,993 | INFO | app | GET /analytics/distribution | status=200 | duration=0.311s
+2026-08-21 10:49:36,243 | INFO | app | GET /analytics/age-distribution | status=200 | duration=0.303s
+2026-08-21 10:49:36,284 | INFO | app | GET /analytics/churn-rate | status=200 | duration=0.904s
+2026-08-21 10:49:36,627 | INFO | app | GET /analytics/risk-distribution | status=200 | duration=0.945s
+2026-08-21 10:49:36,727 | INFO | app | GET /analytics/gender-distribution | status=200 | duration=1.046s
+2026-08-21 10:49:37,153 | INFO | app | GET /analytics/churn-rate | status=200 | duration=0.866s
+2026-08-21 10:49:37,525 | INFO | app | GET /analytics/risk-distribution | status=200 | duration=0.894s
+2026-08-21 10:49:37,821 | INFO | app | GET /analytics/gender-distribution | status=200 | duration=1.091s
+2026-08-21 10:49:46,544 | INFO | app | GET /customer/ | status=200 | duration=5.495s
+2026-08-21 10:49:46,872 | INFO | app | GET /customer/ | status=200 | duration=0.022s
+2026-08-21 10:49:46,876 | INFO | app | GET /customer/ | status=200 | duration=0.023s
+2026-08-21 10:49:46,947 | INFO | app | GET /customer/ | status=200 | duration=0.013s
+2026-08-21 10:49:47,126 | INFO | app | GET /customer/ | status=200 | duration=0.007s
+2026-08-21 10:49:47,406 | INFO | app | GET /customer/ | status=200 | duration=0.008s
+2026-08-21 10:49:47,538 | INFO | app | GET /customer/ | status=200 | duration=0.011s
+2026-08-21 10:49:47,813 | INFO | app | GET /customer/ | status=200 | duration=0.009s
+2026-08-21 10:49:48,051 | INFO | app | GET /customer/ | status=200 | duration=0.009s
+2026-08-21 10:49:48,163 | INFO | app | GET /customer/ | status=200 | duration=0.008s
+2026-08-21 10:49:49,318 | INFO | app | GET /customer/ | status=200 | duration=0.984s
+2026-08-21 10:49:52,706 | INFO | app | GET /customer/ | status=200 | duration=6.157s
+2026-08-21 10:49:55,161 | INFO | app | GET /customer/ | status=200 | duration=0.708s
+2026-08-21 10:50:01,778 | INFO | app | GET /customer/ | status=200 | duration=0.296s
+2026-08-21 10:50:04,824 | INFO | app | GET /customer/ | status=200 | duration=0.534s
+2026-08-21 10:50:13,606 | INFO | app | GET /customer/ | status=200 | duration=0.530s
+2026-08-21 10:50:14,057 | INFO | app | GET /customer/ | status=200 | duration=0.471s
+2026-08-21 10:50:22,476 | INFO | app | GET /customer/ | status=200 | duration=0.196s
+2026-08-21 10:50:22,577 | INFO | app | GET /customer/ | status=200 | duration=0.416s
+2026-08-21 10:50:26,160 | INFO | app | GET /customer/ | status=200 | duration=0.367s
+2026-08-21 10:50:26,781 | INFO | app | GET /customer/ | status=200 | duration=0.486s
+2026-08-21 10:50:28,541 | INFO | app | GET /customer/ | status=200 | duration=0.697s
+2026-08-21 10:50:28,674 | INFO | app | GET /customer/ | status=200 | duration=0.692s
+2026-08-21 10:50:29,843 | INFO | app | GET /customer/ | status=200 | duration=0.539s
+2026-08-21 10:50:30,146 | INFO | app | GET /customer/ | status=200 | duration=0.493s
+2026-08-21 10:50:32,183 | INFO | app | GET /customer/ | status=200 | duration=0.567s
+2026-08-21 10:50:32,341 | INFO | app | GET /customer/ | status=200 | duration=0.584s
+2026-08-21 10:50:51,164 | INFO | app | GET /customer/export | status=200 | duration=17.137s
+2026-08-21 10:51:02,657 | INFO | app | GET /customer/export | status=200 | duration=11.491s
+2026-08-21 10:51:12,500 | INFO | app | GET /customer/export | status=200 | duration=9.837s
+2026-08-21 10:51:48,413 | INFO | app | GET /customer/export | status=200 | duration=45.448s
+2026-08-21 10:51:48,453 | INFO | app | GET /customer/export | status=200 | duration=45.489s
+2026-08-21 10:51:48,484 | INFO | app | GET /customer/export | status=200 | duration=45.519s
+2026-08-21 10:51:58,054 | INFO | app | GET /customer/export | status=200 | duration=7.547s
+2026-08-21 10:52:07,102 | INFO | app | GET /customer/export | status=200 | duration=7.677s
+2026-08-21 10:53:04,856 | INFO | app | POST /auth/login | status=200 | duration=0.637s
+2026-08-21 10:53:05,227 | INFO | app | GET /analytics/distribution | status=200 | duration=0.336s
+2026-08-21 10:53:05,471 | INFO | app | GET /analytics/age-distribution | status=200 | duration=0.271s
+2026-08-21 10:53:05,676 | INFO | app | GET /analytics/distribution | status=200 | duration=0.444s
+2026-08-21 10:53:05,835 | INFO | app | GET /analytics/age-distribution | status=200 | duration=0.358s
+2026-08-21 10:53:05,963 | INFO | app | GET /analytics/churn-rate | status=200 | duration=1.078s
+2026-08-21 10:53:06,291 | INFO | app | GET /analytics/risk-distribution | status=200 | duration=1.086s
+2026-08-21 10:53:06,568 | INFO | app | GET /analytics/gender-distribution | status=200 | duration=1.366s
+2026-08-21 10:53:07,082 | INFO | app | GET /analytics/churn-rate | status=200 | duration=1.114s
+2026-08-21 10:53:07,425 | INFO | app | GET /analytics/risk-distribution | status=200 | duration=1.129s
+2026-08-21 10:53:07,895 | INFO | app | GET /analytics/gender-distribution | status=200 | duration=1.320s
+2026-08-21 10:53:42,527 | INFO | app | GET /customer/ | status=200 | duration=6.879s
+2026-08-21 10:53:49,345 | INFO | app | GET /customer/ | status=200 | duration=6.812s
+2026-08-21 10:54:12,124 | INFO | app | GET /customer/ | status=200 | duration=0.011s
+2026-08-21 10:54:12,541 | INFO | app | GET /customer/ | status=200 | duration=0.019s
+2026-08-21 10:54:12,888 | INFO | app | GET /customer/ | status=200 | duration=0.020s
+2026-08-21 10:54:13,151 | INFO | app | GET /customer/ | status=200 | duration=0.024s
+2026-08-21 10:54:13,323 | INFO | app | GET /customer/ | status=200 | duration=0.015s
+2026-08-21 10:54:14,880 | INFO | app | GET /customer/ | status=200 | duration=1.113s
+2026-08-21 10:54:18,316 | INFO | app | GET /customer/ | status=200 | duration=0.943s
+2026-08-21 10:54:24,117 | INFO | app | GET /customer/ | status=200 | duration=0.887s
+2026-08-21 10:54:24,656 | INFO | app | GET /customer/ | status=200 | duration=0.704s
+2026-08-21 10:55:12,673 | INFO | app | GET /customer/ | status=200 | duration=0.698s
+2026-08-21 10:57:33,873 | INFO | app | POST /prediction/216 | status=200 | duration=0.029s
+2026-08-21 10:57:35,358 | INFO | app | POST /prediction/229 | status=200 | duration=0.029s
+2026-08-21 10:57:39,089 | INFO | app | GET /analytics/age-distribution | status=200 | duration=0.211s
+2026-08-21 10:57:39,148 | INFO | app | GET /analytics/distribution | status=200 | duration=0.271s
+2026-08-21 10:57:39,400 | INFO | app | GET /analytics/age-distribution | status=200 | duration=0.207s
+2026-08-21 10:57:39,516 | INFO | app | GET /analytics/distribution | status=200 | duration=0.322s
+2026-08-21 10:57:39,752 | INFO | app | GET /analytics/churn-rate | status=200 | duration=0.876s
+2026-08-21 10:57:39,975 | INFO | app | GET /analytics/risk-distribution | status=200 | duration=0.822s
+2026-08-21 10:57:40,102 | INFO | app | GET /analytics/gender-distribution | status=200 | duration=1.009s
+2026-08-21 10:57:40,659 | INFO | app | GET /analytics/churn-rate | status=200 | duration=0.904s
+2026-08-21 10:57:40,887 | INFO | app | GET /analytics/risk-distribution | status=200 | duration=0.909s
+2026-08-21 10:57:41,092 | INFO | app | GET /analytics/gender-distribution | status=200 | duration=0.987s
+2026-08-27 12:03:01,807 | INFO | app | POST /auth/login | status=200 | duration=0.824s
+2026-08-27 12:03:02,476 | INFO | app | GET /analytics/distribution | status=200 | duration=0.470s
+2026-08-27 12:03:02,662 | INFO | app | GET /analytics/distribution | status=200 | duration=0.179s
+2026-08-27 12:03:02,864 | INFO | app | GET /analytics/age-distribution | status=200 | duration=0.636s
+2026-08-27 12:03:03,247 | INFO | app | GET /analytics/age-distribution | status=200 | duration=0.375s
+2026-08-27 12:03:03,686 | INFO | app | GET /analytics/gender-distribution | status=200 | duration=1.455s
+2026-08-27 12:03:03,694 | INFO | app | GET /analytics/churn-rate | status=200 | duration=1.762s
+2026-08-27 12:03:04,251 | INFO | app | GET /analytics/risk-distribution | status=200 | duration=2.018s
+2026-08-27 12:03:04,957 | INFO | app | GET /analytics/gender-distribution | status=200 | duration=1.263s
+2026-08-27 12:03:05,120 | INFO | app | GET /analytics/churn-rate | status=200 | duration=1.417s
+2026-08-27 12:03:05,666 | INFO | app | GET /analytics/risk-distribution | status=200 | duration=1.407s
+2026-08-27 12:03:15,279 | INFO | app | GET /customer/ | status=200 | duration=5.987s
+2026-08-27 12:03:23,426 | INFO | app | GET /customer/ | status=200 | duration=8.136s
+2026-08-27 12:03:27,234 | INFO | app | POST /prediction/1 | status=200 | duration=0.445s
+2026-08-27 12:03:28,959 | INFO | app | POST /prediction/2 | status=200 | duration=0.056s
+2026-08-27 12:03:41,907 | INFO | app | POST /prediction/custom | status=200 | duration=0.045s
+2026-08-27 12:03:44,806 | INFO | app | GET /analytics/age-distribution | status=200 | duration=0.621s
+2026-08-27 12:03:44,986 | INFO | app | GET /analytics/distribution | status=200 | duration=0.802s
+2026-08-27 12:03:45,497 | INFO | app | GET /analytics/age-distribution | status=200 | duration=0.680s
+2026-08-27 12:03:45,833 | INFO | app | GET /analytics/distribution | status=200 | duration=0.839s
+2026-08-27 12:03:46,233 | INFO | app | GET /analytics/churn-rate | status=200 | duration=2.050s
+2026-08-27 12:03:46,454 | INFO | app | GET /analytics/risk-distribution | status=200 | duration=1.960s
+2026-08-27 12:03:46,772 | INFO | app | GET /analytics/gender-distribution | status=200 | duration=2.279s
+2026-08-27 12:03:47,519 | INFO | app | GET /analytics/churn-rate | status=200 | duration=1.278s
+2026-08-27 12:03:47,711 | INFO | app | GET /analytics/risk-distribution | status=200 | duration=1.244s
+2026-08-27 12:03:48,376 | INFO | app | GET /analytics/gender-distribution | status=200 | duration=1.597s
+2026-08-27 12:04:22,479 | INFO | app | POST /auth/login | status=200 | duration=0.557s
+2026-08-27 12:04:23,031 | INFO | app | GET /analytics/distribution | status=200 | duration=0.498s
+2026-08-27 12:04:23,252 | INFO | app | GET /analytics/age-distribution | status=200 | duration=0.409s
+2026-08-27 12:04:23,577 | INFO | app | GET /analytics/distribution | status=200 | duration=0.539s
+2026-08-27 12:04:23,638 | INFO | app | GET /analytics/age-distribution | status=200 | duration=0.380s
+2026-08-27 12:04:23,786 | INFO | app | GET /analytics/churn-rate | status=200 | duration=1.256s
+2026-08-27 12:04:24,144 | INFO | app | GET /analytics/risk-distribution | status=200 | duration=1.295s
+2026-08-27 12:04:24,493 | INFO | app | GET /analytics/gender-distribution | status=200 | duration=1.648s
+2026-08-27 12:04:25,037 | INFO | app | GET /analytics/churn-rate | status=200 | duration=1.244s
+2026-08-27 12:04:25,400 | INFO | app | GET /analytics/risk-distribution | status=200 | duration=1.248s
+2026-08-27 12:04:26,134 | INFO | app | GET /analytics/gender-distribution | status=200 | duration=1.634s
+2026-08-27 12:04:35,966 | INFO | app | GET /customer/ | status=200 | duration=7.269s
+2026-08-27 12:04:43,176 | INFO | app | GET /customer/ | status=200 | duration=7.200s
+2026-08-27 12:04:45,592 | INFO | app | POST /prediction/1 | status=200 | duration=0.093s
+2026-08-27 12:04:47,173 | INFO | app | POST /prediction/2 | status=200 | duration=0.049s
+2026-08-27 12:06:24,377 | INFO | app | POST /auth/login | status=200 | duration=0.640s
+2026-08-27 12:06:24,876 | INFO | app | GET /analytics/distribution | status=200 | duration=0.458s
+2026-08-27 12:06:25,214 | INFO | app | GET /analytics/age-distribution | status=200 | duration=0.487s
+2026-08-27 12:06:25,477 | INFO | app | GET /analytics/distribution | status=200 | duration=0.593s
+2026-08-27 12:06:25,603 | INFO | app | GET /analytics/age-distribution | status=200 | duration=0.382s
+2026-08-27 12:06:25,828 | INFO | app | GET /analytics/churn-rate | status=200 | duration=1.412s
+2026-08-27 12:06:26,146 | INFO | app | GET /analytics/risk-distribution | status=200 | duration=1.407s
+2026-08-27 12:06:26,522 | INFO | app | GET /analytics/gender-distribution | status=200 | duration=1.793s
+2026-08-27 12:06:27,092 | INFO | app | GET /analytics/churn-rate | status=200 | duration=1.257s
+2026-08-27 12:06:27,385 | INFO | app | GET /analytics/risk-distribution | status=200 | duration=1.232s
+2026-08-27 12:06:28,201 | INFO | app | GET /analytics/gender-distribution | status=200 | duration=1.670s
+2026-08-27 12:07:03,871 | INFO | app | GET /customer/ | status=200 | duration=6.712s
+2026-08-27 12:07:11,064 | INFO | app | GET /customer/ | status=200 | duration=7.186s
+2026-08-27 12:07:16,499 | INFO | app | POST /prediction/1 | status=200 | duration=0.062s
+2026-08-27 12:07:28,674 | INFO | app | POST /prediction/2 | status=200 | duration=0.048s
+2026-08-27 12:07:29,389 | INFO | app | POST /prediction/5 | status=200 | duration=0.017s
+2026-08-27 12:07:32,360 | INFO | app | POST /prediction/6 | status=200 | duration=0.091s
+2026-08-27 12:07:34,110 | INFO | app | POST /prediction/10 | status=200 | duration=0.049s
+2026-08-27 12:07:35,022 | INFO | app | POST /prediction/9 | status=200 | duration=0.044s
+2026-08-27 12:07:37,959 | INFO | app | POST /prediction/15 | status=200 | duration=0.063s
+2026-08-27 12:07:38,776 | INFO | app | POST /prediction/16 | status=200 | duration=0.064s
+2026-08-27 12:08:19,993 | INFO | app | GET /customer/ | status=200 | duration=0.031s
+2026-08-27 12:08:20,020 | INFO | app | GET /customer/ | status=200 | duration=0.021s
+2026-08-27 12:08:20,043 | INFO | app | GET /customer/ | status=200 | duration=0.018s
+2026-08-27 12:08:20,160 | INFO | app | GET /customer/ | status=200 | duration=0.019s
+2026-08-27 12:08:20,380 | INFO | app | GET /customer/ | status=200 | duration=0.019s
+2026-08-27 12:08:21,687 | INFO | app | GET /customer/ | status=200 | duration=1.274s
+2026-08-27 12:08:29,906 | INFO | app | GET /customer/ | status=200 | duration=0.587s
+2026-08-27 12:08:41,756 | INFO | app | GET /customer/ | status=200 | duration=0.181s
+2026-08-27 12:09:31,704 | INFO | app | GET /customer/export | status=200 | duration=32.845s
+2026-08-27 12:10:06,445 | INFO | app | POST /prediction/154 | status=200 | duration=0.051s
+2026-08-27 12:10:06,956 | INFO | app | POST /prediction/193 | status=200 | duration=0.057s
+2026-08-27 12:10:09,480 | INFO | app | POST /prediction/227 | status=200 | duration=0.051s
+2026-08-27 12:10:12,070 | INFO | app | POST /prediction/349 | status=200 | duration=0.068s
+2026-08-27 12:10:57,848 | INFO | app | POST /prediction/custom | status=200 | duration=0.067s
+2026-08-27 12:12:07,346 | INFO | app | GET /analytics/age-distribution | status=200 | duration=0.562s
+2026-08-27 12:12:07,527 | INFO | app | GET /analytics/distribution | status=200 | duration=0.745s
+2026-08-27 12:12:07,808 | INFO | app | GET /analytics/age-distribution | status=200 | duration=0.448s
+2026-08-27 12:12:08,099 | INFO | app | GET /analytics/distribution | status=200 | duration=0.566s
+2026-08-27 12:12:08,365 | INFO | app | GET /analytics/risk-distribution | status=200 | duration=1.577s
+2026-08-27 12:12:08,382 | INFO | app | GET /analytics/churn-rate | status=200 | duration=1.602s
+2026-08-27 12:12:08,738 | INFO | app | GET /analytics/gender-distribution | status=200 | duration=1.950s
+2026-08-27 12:12:09,735 | INFO | app | GET /analytics/risk-distribution | status=200 | duration=1.363s
+2026-08-27 12:12:09,744 | INFO | app | GET /analytics/churn-rate | status=200 | duration=1.354s
+2026-08-27 12:12:10,451 | INFO | app | GET /analytics/gender-distribution | status=200 | duration=1.706s
+2026-08-27 14:25:59,610 | INFO | app | GET /analytics/churn-rate | status=401 | duration=0.002s
+2026-08-27 14:25:59,615 | INFO | app | GET /analytics/distribution | status=401 | duration=0.001s
+2026-08-27 14:25:59,618 | INFO | app | GET /analytics/age-distribution | status=401 | duration=0.001s
+2026-08-27 14:25:59,622 | INFO | app | GET /analytics/gender-distribution | status=401 | duration=0.001s
+2026-08-27 14:25:59,626 | INFO | app | GET /analytics/risk-distribution | status=401 | duration=0.002s
+2026-08-27 14:25:59,630 | INFO | app | GET /analytics/churn-rate | status=401 | duration=0.001s
+2026-08-27 14:25:59,634 | INFO | app | GET /analytics/distribution | status=401 | duration=0.001s
+2026-08-27 14:25:59,638 | INFO | app | GET /analytics/age-distribution | status=401 | duration=0.001s
+2026-08-27 14:25:59,642 | INFO | app | GET /analytics/gender-distribution | status=401 | duration=0.001s
+2026-08-27 14:25:59,645 | INFO | app | GET /analytics/risk-distribution | status=401 | duration=0.001s
+2026-08-27 14:28:04,576 | INFO | app | POST /auth/login | status=200 | duration=0.553s
+2026-08-27 14:28:05,062 | INFO | app | GET /analytics/distribution | status=200 | duration=0.402s
+2026-08-27 14:28:05,432 | INFO | app | GET /analytics/age-distribution | status=200 | duration=0.493s
+2026-08-27 14:28:05,667 | INFO | app | GET /analytics/distribution | status=200 | duration=0.601s
+2026-08-27 14:28:05,692 | INFO | app | GET /analytics/churn-rate | status=200 | duration=1.064s
+2026-08-27 14:28:05,708 | INFO | app | GET /analytics/age-distribution | status=200 | duration=0.269s
+2026-08-27 14:28:05,979 | INFO | app | GET /analytics/risk-distribution | status=200 | duration=1.031s
+2026-08-27 14:28:06,225 | INFO | app | GET /analytics/gender-distribution | status=200 | duration=1.276s
+2026-08-27 14:28:06,478 | INFO | app | GET /analytics/churn-rate | status=200 | duration=0.781s
+2026-08-27 14:28:06,748 | INFO | app | GET /analytics/risk-distribution | status=200 | duration=0.764s
+2026-08-27 14:28:07,237 | INFO | app | GET /analytics/gender-distribution | status=200 | duration=1.007s
+2026-08-27 14:28:13,803 | INFO | app | GET /customer/ | status=200 | duration=5.339s
+2026-08-27 14:28:19,271 | INFO | app | GET /customer/ | status=200 | duration=5.461s
+2026-09-15 06:01:14,461 | INFO | app | POST /auth/login | status=200 | duration=0.620s
+2026-09-15 06:01:15,094 | INFO | app | GET /analytics/distribution | status=200 | duration=0.524s
+2026-09-15 06:01:15,151 | INFO | app | GET /analytics/age-distribution | status=200 | duration=0.574s
+2026-09-15 06:01:15,268 | INFO | app | GET /analytics/distribution | status=200 | duration=0.170s
+2026-09-15 06:01:15,511 | INFO | app | GET /analytics/age-distribution | status=200 | duration=0.355s
+2026-09-15 06:01:15,809 | INFO | app | GET /analytics/gender-distribution | status=200 | duration=1.235s
+2026-09-15 06:01:15,895 | INFO | app | GET /analytics/churn-rate | status=200 | duration=1.376s
+2026-09-15 06:01:16,321 | INFO | app | GET /analytics/risk-distribution | status=200 | duration=1.740s
+2026-09-15 06:01:16,762 | INFO | app | GET /analytics/gender-distribution | status=200 | duration=0.947s
+2026-09-15 06:01:16,973 | INFO | app | GET /analytics/churn-rate | status=200 | duration=1.073s
+2026-09-15 06:01:17,369 | INFO | app | GET /analytics/risk-distribution | status=200 | duration=1.043s
+2026-09-15 06:01:34,264 | INFO | app | GET /customer/ | status=200 | duration=4.508s
+2026-09-15 06:01:40,104 | INFO | app | GET /customer/ | status=200 | duration=5.837s
+2026-09-15 06:01:40,450 | INFO | app | GET /analytics/age-distribution | status=200 | duration=0.285s
+2026-09-15 06:01:40,498 | INFO | app | GET /analytics/distribution | status=200 | duration=0.334s
+2026-09-15 06:01:40,864 | INFO | app | GET /analytics/age-distribution | status=200 | duration=0.409s
+2026-09-15 06:01:41,006 | INFO | app | GET /analytics/distribution | status=200 | duration=0.505s
+2026-09-15 06:01:41,115 | INFO | app | GET /analytics/risk-distribution | status=200 | duration=0.946s
+2026-09-15 06:01:41,176 | INFO | app | GET /analytics/churn-rate | status=200 | duration=1.016s
+2026-09-15 06:01:41,438 | INFO | app | GET /analytics/gender-distribution | status=200 | duration=1.269s
+2026-09-15 06:01:42,067 | INFO | app | GET /analytics/churn-rate | status=200 | duration=0.888s
+2026-09-15 06:01:42,073 | INFO | app | GET /analytics/risk-distribution | status=200 | duration=0.953s
+2026-09-15 06:01:42,585 | INFO | app | GET /analytics/gender-distribution | status=200 | duration=1.143s
+2026-09-15 06:03:14,829 | INFO | app | GET /customer/ | status=200 | duration=5.400s
+2026-09-15 06:03:20,442 | INFO | app | GET /customer/ | status=200 | duration=5.601s
+2026-09-15 06:39:13,016 | INFO | app | GET /assistant/conversations | status=200 | duration=0.034s
+2026-09-15 06:40:41,759 | ERROR | app | POST /assistant/conversations | status=500 | duration=0.044s
+Traceback (most recent call last):
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pymysql\cursors.py", line 159, in execute
+    result = self._query(query)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pymysql\cursors.py", line 330, in _query
+    conn.query(q)
+    ~~~~~~~~~~^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pymysql\connections.py", line 582, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pymysql\connections.py", line 847, in _read_query_result
+    result.read()
+    ~~~~~~~~~~~^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pymysql\connections.py", line 1245, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pymysql\connections.py", line 803, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pymysql\err.py", line 154, in raise_mysql_exception
+    raise errorclass(errno, errval, sqlstate=sqlstate)
+pymysql.err.IntegrityError: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`exercise`.`assistant_conversation`, CONSTRAINT `assistant_conversation_ibfk_1` FOREIGN KEY (`username`) REFERENCES `admin` (`username`))')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\exercise_for_final_project\main.py", line 17, in log_requests
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 2685, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 1766, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 2740, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 1786, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 1265, in handle
+    await app(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 151, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 137, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 691, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\fastapi\routing.py", line 347, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\anyio\_backends\_asyncio.py", line 2641, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\anyio\_backends\_asyncio.py", line 1033, in run
+    result = context.run(func, *args)
+  File "D:\exercise_for_final_project\routes\assistant.py", line 116, in create_conversation
+    db.commit()
+    ~~~~~~~~~^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sqlalchemy\orm\session.py", line 2035, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sqlalchemy\orm\session.py", line 1316, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sqlalchemy\orm\session.py", line 1290, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sqlalchemy\orm\session.py", line 4353, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sqlalchemy\orm\session.py", line 4488, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 122, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sqlalchemy\orm\session.py", line 4449, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 465, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 641, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sqlalchemy\orm\persistence.py", line 94, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1049, in _emit_insert_statements
+    result = connection.execute(
+        statement, multiparams, execution_options=execution_options
+    )
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sqlalchemy\engine\base.py", line 1421, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sqlalchemy\engine\base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sqlalchemy\engine\base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pymysql\cursors.py", line 159, in execute
+    result = self._query(query)
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pymysql\cursors.py", line 330, in _query
+    conn.query(q)
+    ~~~~~~~~~~^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pymysql\connections.py", line 582, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pymysql\connections.py", line 847, in _read_query_result
+    result.read()
+    ~~~~~~~~~~~^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pymysql\connections.py", line 1245, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pymysql\connections.py", line 803, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\geeth.madhu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pymysql\err.py", line 154, in raise_mysql_exception
+    raise errorclass(errno, errval, sqlstate=sqlstate)
+sqlalchemy.exc.IntegrityError: (pymysql.err.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`exercise`.`assistant_conversation`, CONSTRAINT `assistant_conversation_ibfk_1` FOREIGN KEY (`username`) REFERENCES `admin` (`username`))')
+[SQL: INSERT INTO assistant_conversation (conversation_id, username, title, created_at, updated_at) VALUES (%(conversation_id)s, %(username)s, %(title)s, %(created_at)s, %(updated_at)s)]
+[parameters: {'conversation_id': '434516fe-89bc-475a-aa7b-e59aac428b23', 'username': 'test_admin', 'title': 'New Conversation', 'created_at': datetime.datetime(2026, 9, 15, 1, 10, 41, 744212), 'updated_at': datetime.datetime(2026, 9, 15, 1, 10, 41, 744216)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-09-15 06:41:13,139 | INFO | app | POST /assistant/conversations | status=200 | duration=0.051s
+2026-09-15 06:41:53,193 | INFO | app | GET /assistant/conversations/c00860ce-eeb5-45b5-adda-35bbca24eec2 | status=200 | duration=0.035s
+2026-09-15 06:41:53,275 | INFO | app | DELETE /assistant/conversations/c00860ce-eeb5-45b5-adda-35bbca24eec2 | status=200 | duration=0.076s
+2026-09-15 06:43:42,024 | INFO | app | GET /analytics/distribution | status=401 | duration=0.077s
+2026-09-15 06:43:42,027 | INFO | app | GET /analytics/age-distribution | status=401 | duration=0.045s
+2026-09-15 06:43:42,029 | INFO | app | GET /analytics/churn-rate | status=401 | duration=0.081s
+2026-09-15 06:43:42,030 | INFO | app | GET /analytics/gender-distribution | status=401 | duration=0.043s
+2026-09-15 06:43:42,031 | INFO | app | GET /analytics/risk-distribution | status=401 | duration=0.037s
+2026-09-15 06:43:42,044 | INFO | app | GET /analytics/distribution | status=401 | duration=0.008s
+2026-09-15 06:43:42,046 | INFO | app | GET /analytics/age-distribution | status=401 | duration=0.008s
+2026-09-15 06:43:42,048 | INFO | app | GET /analytics/gender-distribution | status=401 | duration=0.010s
+2026-09-15 06:43:42,050 | INFO | app | GET /analytics/churn-rate | status=401 | duration=0.013s
+2026-09-15 06:43:42,055 | INFO | app | GET /analytics/risk-distribution | status=401 | duration=0.015s
+2026-09-15 06:43:46,418 | INFO | app | POST /auth/login | status=200 | duration=0.628s
+2026-09-15 06:43:47,003 | INFO | app | GET /analytics/age-distribution | status=200 | duration=0.564s
+2026-09-15 06:43:47,163 | INFO | app | GET /analytics/distribution | status=200 | duration=0.724s
+2026-09-15 06:43:47,346 | INFO | app | GET /analytics/age-distribution | status=200 | duration=0.339s
+2026-09-15 06:43:47,453 | INFO | app | GET /analytics/churn-rate | status=200 | duration=1.017s
+2026-09-15 06:43:47,574 | INFO | app | GET /analytics/distribution | status=200 | duration=0.405s
+2026-09-15 06:43:47,747 | INFO | app | GET /analytics/risk-distribution | status=200 | duration=1.306s
+2026-09-15 06:43:48,147 | INFO | app | GET /analytics/gender-distribution | status=200 | duration=1.707s
+2026-09-15 06:43:48,451 | INFO | app | GET /analytics/churn-rate | status=200 | duration=0.995s
+2026-09-15 06:43:48,744 | INFO | app | GET /analytics/risk-distribution | status=200 | duration=0.992s
+2026-09-15 06:43:48,899 | INFO | app | GET /assistant/conversations | status=200 | duration=0.032s
+2026-09-15 06:43:49,459 | INFO | app | GET /analytics/gender-distribution | status=200 | duration=1.307s
+2026-09-15 06:44:05,888 | INFO | app | POST /assistant/chat | status=500 | duration=0.011s
+2026-09-15 06:45:05,103 | INFO | app | GET /analytics/age-distribution | status=200 | duration=0.566s
+2026-09-15 06:45:05,339 | INFO | app | GET /analytics/distribution | status=200 | duration=0.804s
+2026-09-15 06:45:05,463 | INFO | app | GET /analytics/age-distribution | status=200 | duration=0.356s
+2026-09-15 06:45:05,831 | INFO | app | GET /analytics/distribution | status=200 | duration=0.487s
+2026-09-15 06:45:05,969 | INFO | app | GET /analytics/churn-rate | status=200 | duration=1.474s
+2026-09-15 06:45:05,970 | INFO | app | GET /analytics/risk-distribution | status=200 | duration=1.433s
+2026-09-15 06:45:06,350 | INFO | app | GET /analytics/gender-distribution | status=200 | duration=1.812s
+2026-09-15 06:45:06,993 | INFO | app | GET /analytics/risk-distribution | status=200 | duration=1.019s
+2026-09-15 06:45:07,010 | INFO | app | GET /analytics/churn-rate | status=200 | duration=1.037s
+2026-09-15 06:45:07,731 | INFO | app | GET /analytics/gender-distribution | status=200 | duration=1.376s
+2026-09-15 06:45:11,483 | INFO | app | POST /auth/login | status=200 | duration=0.581s
+2026-09-15 06:45:11,804 | INFO | app | GET /analytics/age-distribution | status=200 | duration=0.298s
+2026-09-15 06:45:11,954 | INFO | app | GET /analytics/distribution | status=200 | duration=0.449s
+2026-09-15 06:45:12,171 | INFO | app | GET /analytics/age-distribution | status=200 | duration=0.362s
+2026-09-15 06:45:12,454 | INFO | app | GET /analytics/distribution | status=200 | duration=0.495s
+2026-09-15 06:45:12,532 | INFO | app | GET /analytics/churn-rate | status=200 | duration=1.029s
+2026-09-15 06:45:12,584 | INFO | app | GET /analytics/risk-distribution | status=200 | duration=1.070s
+2026-09-15 06:45:12,860 | INFO | app | GET /analytics/gender-distribution | status=200 | duration=1.346s
+2026-09-15 06:45:13,642 | INFO | app | GET /analytics/churn-rate | status=200 | duration=1.054s
+2026-09-15 06:45:13,647 | INFO | app | GET /analytics/risk-distribution | status=200 | duration=1.058s
+2026-09-15 06:45:14,203 | INFO | app | GET /analytics/gender-distribution | status=200 | duration=1.338s
+2026-09-15 06:45:17,536 | INFO | app | GET /assistant/conversations | status=200 | duration=0.027s
+2026-09-15 06:45:21,052 | INFO | app | POST /assistant/chat | status=502 | duration=1.159s
+2026-09-15 06:45:21,220 | INFO | app | GET /customer/ | status=200 | duration=5.875s
+2026-09-15 06:45:27,031 | INFO | app | GET /customer/ | status=200 | duration=5.806s
+2026-09-15 06:45:38,502 | INFO | app | GET /assistant/conversations | status=200 | duration=0.012s
+2026-09-15 06:45:38,531 | INFO | app | GET /assistant/conversations/19389ace-f907-4ad4-b9a4-56ab91a21922 | status=200 | duration=0.013s
+2026-09-15 06:45:41,150 | INFO | app | GET /analytics/age-distribution | status=200 | duration=0.275s
+2026-09-15 06:45:41,322 | INFO | app | GET /analytics/distribution | status=200 | duration=0.452s
+2026-09-15 06:45:41,449 | INFO | app | GET /analytics/age-distribution | status=200 | duration=0.294s
+2026-09-15 06:45:41,799 | INFO | app | GET /analytics/distribution | status=200 | duration=0.473s
+2026-09-15 06:45:41,836 | INFO | app | GET /analytics/churn-rate | status=200 | duration=0.974s
+2026-09-15 06:45:41,877 | INFO | app | GET /analytics/risk-distribution | status=200 | duration=0.996s
+2026-09-15 06:45:42,232 | INFO | app | GET /analytics/gender-distribution | status=200 | duration=1.354s
+2026-09-15 06:45:42,885 | INFO | app | GET /analytics/churn-rate | status=200 | duration=1.045s
+2026-09-15 06:45:42,943 | INFO | app | GET /analytics/risk-distribution | status=200 | duration=1.062s
+2026-09-15 06:45:43,575 | INFO | app | GET /analytics/gender-distribution | status=200 | duration=1.339s
+2026-09-16 00:05:33,734 | INFO | app | POST /auth/login | status=200 | duration=0.600s
+2026-09-16 00:05:34,155 | INFO | app | GET /analytics/distribution | status=200 | duration=0.393s
+2026-09-16 00:05:34,181 | INFO | app | GET /analytics/age-distribution | status=200 | duration=0.397s
+2026-09-16 00:05:34,263 | INFO | app | GET /analytics/distribution | status=200 | duration=0.105s
+2026-09-16 00:05:34,482 | INFO | app | GET /analytics/age-distribution | status=200 | duration=0.298s
+2026-09-16 00:05:34,772 | INFO | app | GET /analytics/gender-distribution | status=200 | duration=0.988s
+2026-09-16 00:05:34,900 | INFO | app | GET /analytics/churn-rate | status=200 | duration=1.139s
+2026-09-16 00:05:35,206 | INFO | app | GET /analytics/risk-distribution | status=200 | duration=1.415s
+2026-09-16 00:05:35,438 | INFO | app | GET /analytics/gender-distribution | status=200 | duration=0.661s
+2026-09-16 00:05:35,673 | INFO | app | GET /analytics/churn-rate | status=200 | duration=0.770s
+2026-09-16 00:05:35,861 | INFO | app | GET /analytics/risk-distribution | status=200 | duration=0.652s
+2026-09-16 07:15:42,333 | INFO | app | POST /auth/login | status=200 | duration=0.770s
+2026-09-16 07:15:42,829 | INFO | app | GET /analytics/distribution | status=200 | duration=0.404s
+2026-09-16 07:15:42,987 | INFO | app | GET /analytics/distribution | status=200 | duration=0.152s
+2026-09-16 07:15:43,022 | INFO | app | GET /analytics/age-distribution | status=200 | duration=0.593s
+2026-09-16 07:15:43,321 | INFO | app | GET /analytics/age-distribution | status=200 | duration=0.292s
+2026-09-16 07:15:43,718 | INFO | app | GET /analytics/gender-distribution | status=200 | duration=1.279s
+2026-09-16 07:15:43,820 | INFO | app | GET /analytics/churn-rate | status=200 | duration=1.435s
+2026-09-16 07:15:44,103 | INFO | app | GET /analytics/risk-distribution | status=200 | duration=1.668s
+2026-09-16 07:15:44,640 | INFO | app | GET /analytics/gender-distribution | status=200 | duration=0.914s
+2026-09-16 07:15:44,861 | INFO | app | GET /analytics/churn-rate | status=200 | duration=1.036s
+2026-09-16 07:15:45,165 | INFO | app | GET /analytics/risk-distribution | status=200 | duration=1.058s
+2026-09-16 07:17:56,970 | INFO | app | GET /customer/ | status=200 | duration=4.440s
+2026-09-16 07:18:02,986 | INFO | app | GET /customer/ | status=200 | duration=6.012s
+2026-09-16 07:18:11,383 | INFO | app | POST /prediction/1 | status=200 | duration=0.377s
+2026-09-16 07:18:12,529 | INFO | app | POST /prediction/5 | status=200 | duration=0.042s
+2026-09-16 07:18:13,720 | INFO | app | POST /prediction/9 | status=200 | duration=0.042s
+2026-09-16 07:18:15,468 | INFO | app | POST /prediction/12 | status=200 | duration=0.038s
+2026-09-16 07:18:16,295 | INFO | app | POST /prediction/14 | status=200 | duration=0.037s
+2026-09-16 07:18:19,446 | INFO | app | POST /prediction/18 | status=200 | duration=0.034s
+2026-09-16 07:18:30,149 | INFO | app | GET /analytics/age-distribution | status=200 | duration=0.280s
+2026-09-16 07:18:30,241 | INFO | app | GET /analytics/distribution | status=200 | duration=0.374s
+2026-09-16 07:18:30,453 | INFO | app | GET /analytics/age-distribution | status=200 | duration=0.299s
+2026-09-16 07:18:30,684 | INFO | app | GET /analytics/distribution | status=200 | duration=0.438s
+2026-09-16 07:18:30,819 | INFO | app | GET /analytics/churn-rate | status=200 | duration=0.961s
+2026-09-16 07:18:30,853 | INFO | app | GET /analytics/risk-distribution | status=200 | duration=0.976s
+2026-09-16 07:18:31,079 | INFO | app | GET /analytics/gender-distribution | status=200 | duration=1.205s
+2026-09-16 07:18:31,655 | INFO | app | GET /assistant/conversations | status=200 | duration=0.055s
+2026-09-16 07:18:31,657 | INFO | app | GET /assistant/conversations/19389ace-f907-4ad4-b9a4-56ab91a21922 | status=200 | duration=0.037s
+2026-09-16 07:18:31,745 | INFO | app | GET /analytics/churn-rate | status=200 | duration=0.922s
+2026-09-16 07:18:31,778 | INFO | app | GET /analytics/risk-distribution | status=200 | duration=0.921s
+2026-09-16 07:18:32,299 | INFO | app | GET /analytics/gender-distribution | status=200 | duration=1.215s
+2026-09-16 07:18:45,724 | INFO | app | POST /assistant/chat | status=502 | duration=1.125s
+2026-09-16 07:19:07,374 | INFO | app | GET /assistant/conversations | status=200 | duration=0.017s
+2026-09-16 07:19:07,377 | INFO | app | GET /assistant/conversations/19389ace-f907-4ad4-b9a4-56ab91a21922 | status=200 | duration=0.017s

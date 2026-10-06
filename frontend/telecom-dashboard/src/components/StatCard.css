@@ -1,0 +1,38 @@
+.stat-card {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  padding: 20px 22px;
+  box-shadow: var(--shadow-card);
+  border-top: 3px solid var(--primary);
+}
+
+.stat-card--good {
+  border-top-color: var(--signal-good);
+}
+
+.stat-card--bad {
+  border-top-color: var(--signal-bad);
+}
+
+.stat-card--accent {
+  border-top-color: var(--accent);
+}
+
+.stat-card__label {
+  font-size: 13px;
+  color: var(--ink-soft);
+  font-weight: 600;
+}
+
+.stat-card__value {
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 8px;
+  color: var(--ink);
+}
+
+.stat-card__hint {
+  font-size: 12px;
+  color: var(--ink-soft);
+  margin-top: 6px;
+}

@@ -1,0 +1,32 @@
+.topbar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.topbar__title {
+  font-size: 24px;
+}
+
+.topbar__subtitle {
+  color: var(--ink-soft);
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.topbar__logout {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  color: var(--ink-soft);
+  padding: 9px 16px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 600;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.topbar__logout:hover {
+  border-color: var(--primary-soft);
+  color: var(--primary);
+}

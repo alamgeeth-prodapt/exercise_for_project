@@ -3,8 +3,6 @@ import pandas as pd
 
 
 class BasePreprocessor:
-    """Base class containing generic CSV preprocessing operations."""
-
     def __init__(self, input_path: str | Path, output_path: str | Path):
         self.input_path = Path(input_path)
         self.output_path = Path(output_path)

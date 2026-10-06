@@ -1,0 +1,144 @@
+.customer-table__toolbar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.customer-table__scroll {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+}
+
+.customer-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  background: var(--surface);
+}
+
+.customer-table th {
+  text-align: left;
+  padding: 12px 14px;
+  background: var(--canvas-tint);
+  color: var(--ink-soft);
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  position: sticky;
+  top: 0;
+}
+
+.customer-table td {
+  padding: 11px 14px;
+  border-top: 1px solid var(--line);
+  white-space: nowrap;
+  color: var(--ink);
+}
+
+.customer-table tbody tr:hover {
+  background: var(--canvas);
+}
+
+.customer-table__empty {
+  padding: 40px 0;
+  text-align: center;
+  color: var(--ink-soft);
+}
+
+.churn-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.churn-badge--good {
+  background: var(--signal-good-soft);
+  color: var(--signal-good);
+}
+
+.churn-badge--bad {
+  background: var(--signal-bad-soft);
+  color: var(--signal-bad);
+}
+
+.risk-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.risk-badge--good {
+  background: var(--signal-good-soft);
+  color: var(--signal-good);
+}
+
+.risk-badge--warn {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.risk-badge--bad {
+  background: var(--signal-bad-soft);
+  color: var(--signal-bad);
+}
+
+.risk-badge--unknown {
+  color: var(--ink-soft);
+}
+
+.predict-btn {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.predict-btn:hover {
+  background: var(--primary-soft);
+}
+
+.predict-btn--retry {
+  background: var(--signal-bad);
+}
+
+.prediction-result {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
+.prediction-note {
+  font-size: 12px;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+.prediction-error {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.prediction-error__message {
+  font-size: 12px;
+  color: var(--signal-bad);
+  max-width: 160px;
+  white-space: normal;
+}

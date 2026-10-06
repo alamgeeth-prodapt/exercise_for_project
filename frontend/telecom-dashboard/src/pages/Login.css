@@ -1,0 +1,138 @@
+.login {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(320px, 460px) 1fr;
+}
+
+@media (max-width: 860px) {
+  .login {
+    grid-template-columns: 1fr;
+  }
+  .login__side {
+    display: none;
+  }
+}
+
+.login__panel {
+  background: var(--surface);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 48px 56px;
+  gap: 28px;
+  border-right: 1px solid var(--line);
+}
+
+.login__mark {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--primary);
+}
+
+.login__tagline {
+  color: var(--ink-soft);
+  font-size: 15px;
+  max-width: 32ch;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.login__form h1 {
+  font-size: 26px;
+  margin-bottom: 4px;
+}
+
+.login__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
+.login__field input {
+  padding: 11px 13px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  font-size: 15px;
+  color: var(--ink);
+  background: var(--canvas);
+  transition: border-color 0.15s ease;
+}
+
+.login__field input:focus {
+  border-color: var(--primary-soft);
+  outline: none;
+}
+
+.login__error {
+  background: var(--signal-bad-soft);
+  color: var(--signal-bad);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+}
+
+.login__submit {
+  margin-top: 6px;
+  padding: 12px;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 15px;
+  transition: background 0.15s ease;
+}
+
+.login__submit:hover:not(:disabled) {
+  background: var(--primary-soft);
+}
+
+.login__submit:disabled {
+  opacity: 0.65;
+  cursor: default;
+}
+
+.login__side {
+  background: var(--primary);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  overflow: hidden;
+}
+
+.login__bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  height: 60px;
+}
+
+.login__bars span {
+  width: 10px;
+  border-radius: 3px;
+  background: var(--accent);
+  opacity: 0.85;
+}
+
+.login__side-caption {
+  color: #fff;
+  opacity: 0.75;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
